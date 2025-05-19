@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-nav">
+          <div class="mobile-menu-toggle">
+            <img src="./images/icon-menu.svg" alt="Menu">
+          </div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="Sneakers">
+          </div>
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-nav">
+          <div class="cart-icon">
+            <img src="./images/icon-cart.svg" alt="Cart">
+            <span class="cart-count">0</span>
+          </div>
+          <div class="avatar">
+            <img src="./images/image-avatar.png" alt="Avatar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container product-container">
+      <div class="product-gallery">
+        <div class="main-image">
+          <img src="./images/image-product-1.jpg" alt="Product">
+          <button class="prev-btn mobile-only"><img src="./images/icon-previous.svg" alt="Previous"></button>
+          <button class="next-btn mobile-only"><img src="./images/icon-next.svg" alt="Next"></button>
+        </div>
+        <div class="thumbnails desktop-only">
+          <div class="thumbnail active"><img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1"></div>
+          <div class="thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2"></div>
+          <div class="thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3"></div>
+          <div class="thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4"></div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <p class="company">Sneaker Company</p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        
+        <div class="price-container">
+          <div class="current-price">
+            <span class="price">$125.00</span>
+            <span class="discount">50%</span>
+          </div>
+          <div class="original-price">$250.00</div>
+        </div>
+        
+        <div class="actions">
+          <div class="quantity-selector">
+            <button class="minus"><img src="./images/icon-minus.svg" alt="Minus"></button>
+            <span class="quantity">0</span>
+            <button class="plus"><img src="./images/icon-plus.svg" alt="Plus"></button>
+          </div>
+          <button class="add-to-cart">
+            <img src="./images/icon-cart.svg" alt="Cart">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="cart-modal">
+    <div class="cart-header">
+      <h3>Cart</h3>
+    </div>
+    <div class="cart-content">
+      <p class="empty-cart">Your cart is empty.</p>
+      <!-- Cart items will be added here dynamically -->
+    </div>
+  </div>
+
+  <div class="lightbox">
+    <button class="close-lightbox"><img src="./images/icon-close.svg" alt="Close"></button>
+    <div class="lightbox-content">
+      <div class="main-image">
+        <img src="./images/image-product-1.jpg" alt="Product">
+        <button class="prev-btn"><img src="./images/icon-previous.svg" alt="Previous"></button>
+        <button class="next-btn"><img src="./images/icon-next.svg" alt="Next"></button>
+      </div>
+      <div class="thumbnails">
+        <div class="thumbnail active"><img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail 1"></div>
+        <div class="thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail 2"></div>
+        <div class="thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail 3"></div>
+        <div class="thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail 4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <button class="close-menu"><img src="./images/icon-close.svg" alt="Close"></button>
+    <nav>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="overlay"></div>
+
+  <script src="script.js"></script>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ayokanmi Adejola</a>.
+    </div>
+  </footer>
+</body>
+</html>
